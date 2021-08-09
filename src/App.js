@@ -31,77 +31,60 @@ function App() {
     let point3 = anime.path('#point3');
     let point4 = anime.path('#point4');
     
-    const pointOptions = {
+    let timeline = anime.timeline({
       loop: true,
       duration: 10000,
       easing: 'linear',
       direction: 'alternate'
-    }
+    })
 
-    anime({
+    timeline.add({
       targets: "#mainLine",
       d: [
         {value: line},
         {value: "M 25 299 C 66 304 76 306 130 291 C 193 276 217 290 283 312 C 363 338 348 308 429 297 C 520 288 518 295 589 294 C 661 298 687 268 790 283 "}
-      ],
-      ...pointOptions
-    });
-    anime({
+      ]
+    },0).add({
       targets: "#point1",
       d:[
         {value:"M 134 291"},
         {value:"M 130 291"}
-      ],
-      ...pointOptions
-    })
-    anime({
+      ]
+    },0).add({
       targets: "#point2",
       d:[
         {value: "M 275 346"},
         {value:"M 283 312"}
-      ],
-      ...pointOptions
-    })
-    anime({
+      ]
+    },0).add({
       targets: "#point3",
       d:[
         {value:"M 428 283"},
         {value:"M 429 297"}
-      ],
-      ...pointOptions
-    })
-    anime({
+      ]
+    },0).add({
       targets: "#point4",
       d:[
         {value:"M 588 332"},
         {value:"M 589 294"}
-      ],
-      ...pointOptions
-    })
-    anime({
+      ]
+    },0).add({
       targets: '#sq1',
       translateY: point1('y'),
       translateX: point1('x'),
-      ...pointOptions
-    })
-    anime({
+    },0).add({
       targets: '#sq2',
       translateY: point2('y'),
       translateX: point2('x'),
-      ...pointOptions
-    })
-    anime({
+    },0).add({
       targets: '#sq3',
       translateY: point3('y'),
       translateX: point3('x'),
-      ...pointOptions
-    })
-    anime({
+    },0).add({
       targets: '#sq4',
       translateY: point4('y'),
       translateX: point4('x'),
-      ...pointOptions
-    })
+    },0)
   })
 
   return (

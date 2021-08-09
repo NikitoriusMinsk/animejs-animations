@@ -6,25 +6,6 @@ let line = "M 25 299 C 66 304 82 286 134 291 C 180 288 186 337 275 346 C 360 336
 
 function App() {
 
-  function sendRequest(){
-    const url = "http://192.168.100.7:3000/product/create"
-    const body = {
-      message: "pososal!!!"
-    }
-    const headers = new Headers();
-      headers.append("Content-Type", "application/json");
-      headers.append("Accept", "application/json");
-    const request = {
-      method: "POST",
-      headers: headers,
-      credentials: "include",
-      body: JSON.stringify(body)
-    }
-    fetch(url, request)
-      .then((response) => {console.log(response)})
-      .catch(error => console.log('error', error));
-  }
-
   useEffect(()=>{
     let point1 = anime.path('#point1');
     let point2 = anime.path('#point2');

@@ -32,40 +32,36 @@ function App() {
     let point4 = anime.path('#point4');
     
     let timeline = anime.timeline({
-      loop: true,
       duration: 10000,
-      easing: 'linear',
-      direction: 'alternate'
+      easing: 'easeInOutSine',
+      loop: true,
+      direction: 'alternate',
+      delay: 0
     })
 
     timeline.add({
       targets: "#mainLine",
       d: [
-        {value: line},
         {value: "M 25 299 C 66 304 76 306 130 291 C 193 276 217 290 283 312 C 363 338 348 308 429 297 C 520 288 518 295 589 294 C 661 298 687 268 790 283 "}
       ]
     },0).add({
       targets: "#point1",
       d:[
-        {value:"M 134 291"},
         {value:"M 130 291"}
       ]
     },0).add({
       targets: "#point2",
       d:[
-        {value: "M 275 346"},
         {value:"M 283 312"}
       ]
     },0).add({
       targets: "#point3",
       d:[
-        {value:"M 428 283"},
         {value:"M 429 297"}
       ]
     },0).add({
       targets: "#point4",
       d:[
-        {value:"M 588 332"},
         {value:"M 589 294"}
       ]
     },0).add({

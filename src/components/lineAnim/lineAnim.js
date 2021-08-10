@@ -2,7 +2,7 @@ import "./lineAnim.css";
 import anime from 'animejs/lib/anime.es.js';
 import { useEffect } from 'react';
  
-function LineAnim(props){
+function LineAnimation(props){
     let line = "M 25 299 C 66 304 82 286 134 291 C 180 288 186 337 275 346 C 360 336 345 291 428 283 C 510 301 516 354 588 332 C 666 307 687 268 790 283 ";
 
     useEffect(()=>{
@@ -64,7 +64,7 @@ function LineAnim(props){
     })
 
     return (
-        <div className="lineAnimContainer">
+        <div className="lineAnimationContainer">
         <div className="container">
             <div className="circle" id="sq1"/>
             <div className="circle" id="sq2"/>
@@ -82,4 +82,4 @@ function LineAnim(props){
     );
 }
  
-export default LineAnim;
+export default LineAnimation;

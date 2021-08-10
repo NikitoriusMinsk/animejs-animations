@@ -23,7 +23,7 @@ function ScrollAnimation(props){
         return ()=>{
             window.removeEventListener('scroll', handleScroll);
         }
-    },[handleScroll])
+    },[])
 
     return(
         <div className="scrollAnimationContainer">

@@ -65,19 +65,17 @@ function LineAnimation(props){
 
     return (
         <div className="lineAnimationContainer">
-        <div className="container">
             <div className="circle" id="sq1"/>
             <div className="circle" id="sq2"/>
             <div className="circle" id="sq3"/>
             <div className="circle" id="sq4"/>
             <svg id="line" height="400px" width="1000px">
-            <path id="mainLine" d={line} stroke="white" fill="none" ></path>
-            <path id="point1" d="M 134 291" stroke="red"/>
-            <path id="point2" d="M 275 346" stroke="red"/>
-            <path id="point3" d="M 428 283" stroke="red"/>
-            <path id="point4" d="M 588 332" stroke="red"/>
+                <path id="mainLine" d={line} stroke="white" fill="none" />
+                <path id="point1" d="M 134 291" stroke="red"/>
+                <path id="point2" d="M 275 346" stroke="red"/>
+                <path id="point3" d="M 428 283" stroke="red"/>
+                <path id="point4" d="M 588 332" stroke="red"/>
             </svg>
-        </div>
         </div>
     );
 }

@@ -1,0 +1,21 @@
+.scrollAnimationContainer{
+    position: relative;
+    height: 1675px;
+    width: 375px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.square{
+    opacity: 0;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+}

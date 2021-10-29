@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.61 98.89">
+    <defs>
+        <style>
+            .cls-1{
+                fill:#fdc30f;
+            }
+            .cls-2{
+                fill:#10994f;
+            }
+            .cls-3{
+                fill:#dd80b3;
+            }
+            .cls-4{
+                fill:#70c5ef;
+            }
+            .cls-5{
+                font-size:29px;fill:#1d1d1b;
+                font-family:Montserrat-Bold, Montserrat;
+                font-weight:700;letter-spacing:-0.03em;
+            }
+        </style>
+        </defs>
+        <g id="Слой_2" data-name="Слой 2">
+            <g id="Слой_1-2" data-name="Слой 1">
+                <circle class="cls-1" cx="21.22" cy="41.15" r="21.22"/>
+                <rect class="cls-2" x="48.77" y="20.06" width="164.8" height="27" rx="12"/>
+                <rect class="cls-3" x="160.98" y="-6" width="42.59" height="109.33" rx="21.3" transform="translate(60.48 -95.41) rotate(34.84)"/>
+                <circle class="cls-4" cx="77.89" cy="85.24" r="13.66"/>
+                <text class="cls-5" transform="translate(17.3 66.93)">webRangers</text>
+            </g>
+        </g>
+    </svg>
